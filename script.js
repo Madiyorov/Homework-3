@@ -112,4 +112,38 @@ switch(time) {
 }
 
 
-/* ДЗ-№2 */
+/* ДЗ-№3 */
+
+var a = +prompt('Введите первое число') 
+var b = +prompt('Введите второе число') 
+var c = +prompt('Третье второе число') 
+
+if(a > b || a > c && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    alert (a + ' среднее число ');
+}   
+else if(a < b || a < c && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    alert(b + ' среднее число ');
+}
+else if(b > a || b > c && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    alert(b + ' среднее число ');
+}
+else if(b < a || b < c && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    alert(b + ' среднее число ');
+}
+else if(c > a || c < a && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    alert(b + ' среднее число ');
+}
+else if(c < b || c < b && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    alert(b + ' среднее число ');
+}
+else {
+    if(isNaN(a) && isNaN(b) && isNaN(c)) {
+        alert('Трое числа не числа');
+    }else if(isNaN(a)) {
+        alert('Первое число введено не верно');
+    }else if(isNaN(b)) {
+        alert('Второе число введено не верно');
+    }else {
+        alert('Третье число введено не верно');
+    }
+}
